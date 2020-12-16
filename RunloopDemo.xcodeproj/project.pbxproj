@@ -13,6 +13,7 @@
 		51FC476125899B1A00B0A334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FC475F25899B1A00B0A334 /* Main.storyboard */; };
 		51FC476325899B1A00B0A334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FC476225899B1A00B0A334 /* Assets.xcassets */; };
 		51FC476625899B1A00B0A334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FC476425899B1A00B0A334 /* LaunchScreen.storyboard */; };
+		51FC476F2589AE8A00B0A334 /* ResidentMemoryThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FC476E2589AE8A00B0A334 /* ResidentMemoryThread.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		51FC476225899B1A00B0A334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51FC476525899B1A00B0A334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FC476725899B1A00B0A334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51FC476E2589AE8A00B0A334 /* ResidentMemoryThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentMemoryThread.swift; sourceTree = "<group>"; };
+		51FC47712589D29E00B0A334 /* RunloopDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunloopDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				51FC476225899B1A00B0A334 /* Assets.xcassets */,
 				51FC476425899B1A00B0A334 /* LaunchScreen.storyboard */,
 				51FC476725899B1A00B0A334 /* Info.plist */,
+				51FC476E2589AE8A00B0A334 /* ResidentMemoryThread.swift */,
+				51FC47712589D29E00B0A334 /* RunloopDemo-Bridging-Header.h */,
 			);
 			path = RunloopDemo;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 				TargetAttributes = {
 					51FC475525899B1A00B0A334 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -137,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51FC476F2589AE8A00B0A334 /* ResidentMemoryThread.swift in Sources */,
 				51FC475E25899B1A00B0A334 /* ViewController.swift in Sources */,
 				51FC475A25899B1A00B0A334 /* AppDelegate.swift in Sources */,
 				51FC475C25899B1A00B0A334 /* SceneDelegate.swift in Sources */,
@@ -286,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RunloopDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +302,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Quan.Li.RunloopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunloopDemo/RunloopDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RunloopDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -312,6 +323,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Quan.Li.RunloopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunloopDemo/RunloopDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
